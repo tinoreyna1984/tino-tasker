@@ -1,0 +1,15 @@
+/*************** float-button ***************/
+
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.float-button{
+    z-index: 20;
+    position:fixed;
+	max-width:fit-content;
+	height:6rem;
+	bottom:4rem;
+	left: auto;
+    font-size: 2rem !important;
+	cursor: pointer;
+}

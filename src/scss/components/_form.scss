@@ -1,0 +1,23 @@
+/*************** form ***************/
+
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.modal-form {
+  min-width: 20rem;
+  max-width: 50rem;
+
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    textarea {
+      max-width: 25rem !important;
+      max-height: 28rem !important;
+      @include m.tablet {
+        max-width: 60rem !important;
+        max-height: 60rem !important;
+      }
+    }
+  }
+}

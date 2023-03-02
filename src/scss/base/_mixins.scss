@@ -1,0 +1,70 @@
+/*************** mixins ***************/
+
+@use "variables" as v;
+
+/* Media queries */
+
+@mixin phone {
+  @media (min-width: v.$telefono) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: v.$tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: v.$desktop) {
+    @content;
+  }
+}
+
+@mixin desktopXL {
+  @media (min-width: v.$desktopXL) {
+    @content;
+  }
+}
+
+@mixin desktopXXL {
+  @media (min-width: v.$desktopXXL) {
+    @content;
+  }
+}
+
+@mixin desktop4K {
+  @media (min-width: v.$desktop4K) {
+    @content;
+  }
+}
+
+@mixin mobileFirst {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+/* remove list format */
+@mixin list-without-format {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* set up dark mode */
+@mixin prefer-dark-mode {
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: v.$black;
+      color: v.$white;
+    }
+  }
+}
+
+@mixin prefix($prop, $val) {
+  @each $prefix in "-webkit-", "-moz-", "-ms-", "" {
+    #{$prefix}#{$prop}: $val;
+  }
+}

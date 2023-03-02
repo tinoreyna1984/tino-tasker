@@ -1,0 +1,115 @@
+/*************** globals ***************/
+
+@use "variables" as v;
+@use "mixins" as m;
+
+html {
+  font-size: 62.5%; /* font-size base a nivel de html */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px; /* font-size base a nivel del documento */
+  font-family: v.$short-stack;
+  color: v.$black;
+  background-color: v.$bg-light-mode; /* fondo inicial */
+  transition: 0.7s ease all;
+  padding: 1rem 0;
+  min-width: 32rem;
+
+  &.fixed-body {
+    overflow: hidden; /* inmoviliza el body después de amplificar una imagen de la galería */
+  }
+
+  &.dark {
+    /* dark mode */
+    color: v.$white;
+    background-color: v.$bg-dark-mode;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+
+  &-thumb {
+    background: #3c3c3c;
+    border-radius: 1.2rem;
+
+    &:hover {
+      background: #636363;
+    }
+  }
+}
+
+p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-family: v.$short-stack;
+}
+
+ul {
+  margin: 0;
+  li {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-family: v.$short-stack;
+  }
+}
+
+.container {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 0 0;
+  font-family: v.$short-stack;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* only for this app */
+.task-app-container {
+  width: 95%;
+  max-width: 76.8rem;
+  margin: 0 auto;
+}
+.bg-grey-special {
+  background-color: #d0d0d0;
+}

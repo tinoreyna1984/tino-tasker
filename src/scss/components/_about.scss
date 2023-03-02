@@ -1,0 +1,10 @@
+/*************** about ***************/
+
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.about {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+}

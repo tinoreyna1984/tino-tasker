@@ -1,0 +1,13 @@
+/*************** navbar ***************/
+
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.nav-container {
+  margin: 2rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}

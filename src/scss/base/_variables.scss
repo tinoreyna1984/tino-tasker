@@ -1,0 +1,26 @@
+/*************** variables ***************/
+
+// colors
+$white: #ffffff;
+$black: #000000;
+
+// max-width values (media queries)
+$phone: 480px;
+$tablet: 768px;
+$desktop: 992px;
+$desktopXL: 1200px;
+$desktopXXL: 1440px;
+$desktop4K: 3840px;
+
+// Typography
+$short-stack: "Short Stack", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+
+// Background
+$bg-light-mode: #fefefe;
+$bg-dark-mode: $black;
+
+// Box Shadow
+$box-shadow-light-mode: 0px 3px 15px -2px rgba(209,209,209,0.76);
+$box-shadow-dark-mode:  0px 0px 51px 5px rgba(255,255,255,0.95);
+
