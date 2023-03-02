@@ -30,7 +30,8 @@ export function CompletedTasksList({ tasks }) {
           completed.length > 0 ?
             (completed.map(task => (
               <div key={task.id} className='task'>
-                <p>{task.title}</p>
+                <h3>{task.title}</h3>
+                <p>{task.comments}</p>
                 <button type='button' onClick={() => handleDelete(task.id)}>Delete</button>
               </div>
             ))) :

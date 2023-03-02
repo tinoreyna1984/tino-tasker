@@ -28,10 +28,11 @@ export function Task({ task }) {
                 <label htmlFor={task.id}>
                     <input className='doodle' id={task.id} checked={task.completed ? true : false}
                         name="complete" type="checkbox" onChange={(e) => handleComplete(e, task.id)} />
-                    <p>{task.title}</p>
+                    <h4>{task.title}</h4>
                 </label>
+                <p>{task.comments}</p>
                 <div className='task-actions'>
-                    <button type='button' onClick={() => handleEdit(task.id)}>View/Edit</button>
+                    <button type='button' onClick={() => handleEdit(task.id)}>Edit</button>
                     <button type='button' onClick={() => handleDelete(task.id)}>Delete</button>
                 </div>
             </div>

@@ -10,7 +10,8 @@ export function PendingTasksList({ tasks }) {
           pending.length > 0 ?
             (pending.map(task => (
               <div key={task.id} className='task'>
-                <p>{"=> " + task.title}</p>
+                <h3>{task.title}</h3>
+                <p>{task.comments}</p>
               </div>
             ))) :
             (<div className='task'>
