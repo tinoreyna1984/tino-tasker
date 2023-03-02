@@ -35,7 +35,7 @@
         line-height: 1.6rem;
         padding: 0 1rem;
       }
-      input[type=checkbox]:checked + p{
+      input[type=checkbox]:checked + h4{
         text-decoration: line-through;
       }
     }
